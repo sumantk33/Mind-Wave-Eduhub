@@ -1,5 +1,6 @@
-// Tailwind config for dynamic colors and animations
-tailwind.config = {
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -32,5 +33,6 @@ tailwind.config = {
       },
     },
   },
+  plugins: [],
   darkMode: "class",
 };

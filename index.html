@@ -3,29 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <script src="scripts/tailwind-config.js"></script>
-    <style>
-      .gradient-text {
-        background: linear-gradient(135deg, #3b82f6, #8b5cf6, #f59e0b);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-      .glass-effect {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
-      .dark .glass-effect {
-        background: rgba(0, 0, 0, 0.2);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-      }
-    </style>
     <!-- Meta Tags (Need to revisit later) -->
     <meta
       name="description"
@@ -53,7 +30,7 @@
             <div
               class="w-10 h-10 bg-gradient-to-r from-brand to-accent rounded-xl flex items-center justify-center"
             >
-              <i class="fas fa-graduation-cap text-white text-lg"></i>
+              <i data-lucide="graduation-cap" class="text-white h-7 w-7"></i>
             </div>
             <h1 class="text-2xl font-bold gradient-text">Mind-Wave EduHub</h1>
           </div>
@@ -82,13 +59,13 @@
           <div class="flex items-center space-x-4">
             <button
               id="theme-toggle"
-              class="rounded-full w-[3rem] h-[3rem] glass-effect hover:scale-110 transition-all duration-200"
+              class="flex items-center justify-center rounded-full w-[3rem] h-[3rem] glass-effect hover:scale-110 transition-all duration-200"
               aria-label="Toggle theme"
             >
-              <i class="fas fa-moon text-lg"></i>
+              <i data-lucide="moon"></i>
             </button>
             <button class="md:hidden p-2 glass-effect rounded-lg">
-              <i class="fas fa-bars"></i>
+              <i data-lucide="menu" class="h-5 w-5"></i>
             </button>
           </div>
         </div>
@@ -135,7 +112,8 @@
               <span class="flex items-center space-x-2">
                 <span>Explore Courses</span>
                 <i
-                  class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+                  data-lucide="arrow-right"
+                  class="h-5 w-5 group-hover:translate-x-1 transition-transform"
                 ></i>
               </span>
             </a>
@@ -193,7 +171,7 @@
             <div
               class="aspect-video bg-gradient-to-br from-brand/20 to-accent/20 flex items-center justify-center"
             >
-              <i class="fas fa-code text-6xl text-brand/60"></i>
+              <i data-lucide="code-xml" class="h-16 w-16 text-brand/60"></i>
             </div>
             <div
               class="absolute top-4 right-4 bg-orange-700 text-white px-3 py-1 rounded-full text-sm font-semibold"
@@ -208,7 +186,7 @@
                   Web Development Mastery
                 </h4>
                 <div class="flex items-center text-yellow-500">
-                  <i class="fas fa-star"></i>
+                  <i data-lucide="star" class="h-5 w-5 fill-yellow-500"></i>
                   <span class="ml-1 text-sm font-medium">4.9</span>
                 </div>
               </div>
@@ -220,11 +198,11 @@
             <div class="flex flex-col">
               <div class="flex items-center justify-between mb-4">
                 <div class="flex items-center text-sm text-gray-500">
-                  <i class="fas fa-clock mr-2"></i>
+                  <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
                   <span>40 hours</span>
                 </div>
                 <div class="flex items-center text-sm text-gray-500">
-                  <i class="fas fa-users mr-2"></i>
+                  <i data-lucide="users" class="h-4 w-4 mr-2 fill-gray-500"></i>
                   <span>1,200 students</span>
                 </div>
               </div>
@@ -258,7 +236,7 @@
             <div
               class="aspect-video bg-gradient-to-br from-accent/20 to-brand/20 flex items-center justify-center"
             >
-              <i class="fas fa-chart-line text-6xl text-accent/60"></i>
+              <i data-lucide="chart-line" class="h-16 w-16 text-accent/60"></i>
             </div>
             <div
               class="absolute top-4 right-4 bg-blue-700 text-white px-3 py-1 rounded-full text-sm font-semibold"
@@ -273,7 +251,7 @@
                   Data Science & Analytics
                 </h4>
                 <div class="flex items-center text-yellow-500">
-                  <i class="fas fa-star"></i>
+                  <i data-lucide="star" class="h-5 w-5 fill-yellow-500"></i>
                   <span class="ml-1 text-sm font-medium">4.8</span>
                 </div>
               </div>
@@ -285,11 +263,11 @@
             <div class="flex flex-col">
               <div class="flex items-center justify-between mb-4">
                 <div class="flex items-center text-sm text-gray-500">
-                  <i class="fas fa-clock mr-2"></i>
+                  <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
                   <span>35 hours</span>
                 </div>
                 <div class="flex items-center text-sm text-gray-500">
-                  <i class="fas fa-users mr-2"></i>
+                  <i data-lucide="users" class="h-4 w-4 mr-2 fill-gray-500"></i>
                   <span>890 students</span>
                 </div>
               </div>
@@ -323,7 +301,10 @@
             <div
               class="aspect-video bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center"
             >
-              <i class="fas fa-mobile-alt text-6xl text-purple-500/60"></i>
+              <i
+                data-lucide="tablet-smartphone"
+                class="h-16 w-16 text-purple-500/60"
+              ></i>
             </div>
             <div
               class="absolute top-4 right-4 bg-purple-700 text-white px-3 py-1 rounded-full text-sm font-semibold"
@@ -338,7 +319,7 @@
                   Mobile App Development
                 </h4>
                 <div class="flex items-center text-yellow-500">
-                  <i class="fas fa-star"></i>
+                  <i data-lucide="star" class="h-5 w-5 fill-yellow-500"></i>
                   <span class="ml-1 text-sm font-medium">4.7</span>
                 </div>
               </div>
@@ -350,11 +331,11 @@
             <div class="flex flex-col">
               <div class="flex items-center justify-between mb-4">
                 <div class="flex items-center text-sm text-gray-500">
-                  <i class="fas fa-clock mr-2"></i>
+                  <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
                   <span>30 hours</span>
                 </div>
                 <div class="flex items-center text-sm text-gray-500">
-                  <i class="fas fa-users mr-2"></i>
+                  <i data-lucide="users" class="h-4 w-4 mr-2 fill-gray-500"></i>
                   <span>650 students</span>
                 </div>
               </div>
@@ -395,7 +376,8 @@
             >
               <span>How do I enroll in a course?</span>
               <i
-                class="fas fa-chevron-down group-open:rotate-180 transition-transform duration-200"
+                data-lucide="chevron-down"
+                class="group-open:rotate-180 transition-transform duration-200"
               ></i>
             </summary>
             <p class="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed">
@@ -412,7 +394,8 @@
             >
               <span>Are courses self-paced?</span>
               <i
-                class="fas fa-chevron-down group-open:rotate-180 transition-transform duration-200"
+                data-lucide="chevron-down"
+                class="group-open:rotate-180 transition-transform duration-200"
               ></i>
             </summary>
             <p class="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed">
@@ -429,7 +412,8 @@
             >
               <span>Do you offer certificates?</span>
               <i
-                class="fas fa-chevron-down group-open:rotate-180 transition-transform duration-200"
+                data-lucide="chevron-down"
+                class="group-open:rotate-180 transition-transform duration-200"
               ></i>
             </summary>
             <p class="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed">
@@ -446,7 +430,8 @@
             >
               <span>What if I need help during the course?</span>
               <i
-                class="fas fa-chevron-down group-open:rotate-180 transition-transform duration-200"
+                data-lucide="chevron-down"
+                class="group-open:rotate-180 transition-transform duration-200"
               ></i>
             </summary>
             <p class="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed">
@@ -484,7 +469,10 @@
                 <div
                   class="w-12 h-12 bg-gradient-to-r from-brand to-accent rounded-xl flex items-center justify-center mr-4"
                 >
-                  <i class="fas fa-graduation-cap text-white text-xl"></i>
+                  <i
+                    data-lucide="graduation-cap"
+                    class="text-white h-6 w-6"
+                  ></i>
                 </div>
                 <h4 class="text-xl font-bold">Expert Instructors</h4>
               </div>
@@ -499,7 +487,7 @@
                 <div
                   class="w-12 h-12 bg-gradient-to-r from-accent to-brand rounded-xl flex items-center justify-center mr-4"
                 >
-                  <i class="fas fa-laptop-code text-white text-xl"></i>
+                  <i data-lucide="terminal" class="text-white h-6 w-6"></i>
                 </div>
                 <h4 class="text-xl font-bold">Hands-on Learning</h4>
               </div>
@@ -514,7 +502,7 @@
                 <div
                   class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mr-4"
                 >
-                  <i class="fas fa-users text-white text-xl"></i>
+                  <i data-lucide="users" class="h-5 w-5 fill-white"></i>
                 </div>
                 <h4 class="text-xl font-bold">Community Support</h4>
               </div>
@@ -571,7 +559,7 @@
                 <div
                   class="w-12 h-12 bg-gradient-to-r from-brand to-accent rounded-xl flex items-center justify-center"
                 >
-                  <i class="fas fa-phone text-white"></i>
+                  <i data-lucide="phone" class="h-4 w-4 fill-white"></i>
                 </div>
                 <div>
                   <div class="font-semibold">Phone</div>
@@ -585,7 +573,7 @@
                 <div
                   class="w-12 h-12 bg-gradient-to-r from-accent to-brand rounded-xl flex items-center justify-center"
                 >
-                  <i class="fas fa-envelope text-white"></i>
+                  <i data-lucide="mail" class="h-5 w-5"></i>
                 </div>
                 <div>
                   <div class="font-semibold">Email</div>
@@ -599,7 +587,7 @@
                 <div
                   class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center"
                 >
-                  <i class="fas fa-map-marker-alt text-white"></i>
+                  <i data-lucide="map-pin" class="h-5 w-5"></i>
                 </div>
                 <div>
                   <div class="font-semibold">Address</div>
@@ -619,28 +607,37 @@
                 class="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center hover:scale-110 transition-transform"
                 aria-label="Facebook"
               >
-                <i class="fab fa-facebook-f text-white"></i>
+                <i
+                  data-lucide="facebook"
+                  class="fill-white h-[1.25rem] w-[1.25rem]"
+                ></i>
               </a>
               <a
                 href="#"
                 class="w-10 h-10 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl flex items-center justify-center hover:scale-110 transition-transform"
                 aria-label="Twitter"
               >
-                <i class="fab fa-twitter text-white"></i>
+                <i
+                  data-lucide="twitter"
+                  class="fill-white h-[1.25rem] w-[1.25rem]"
+                ></i>
               </a>
               <a
                 href="#"
                 class="w-10 h-10 bg-gradient-to-r from-pink-500 to-pink-600 rounded-xl flex items-center justify-center hover:scale-110 transition-transform"
                 aria-label="Instagram"
               >
-                <i class="fab fa-instagram text-white"></i>
+                <i data-lucide="instagram" class="h-[1.25rem] w-[1.25rem]"></i>
               </a>
               <a
                 href="#"
                 class="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl flex items-center justify-center hover:scale-110 transition-transform"
                 aria-label="LinkedIn"
               >
-                <i class="fab fa-linkedin-in text-white"></i>
+                <i
+                  data-lucide="linkedin"
+                  class="fill-white h-[1.25rem] w-[1.25rem]"
+                ></i>
               </a>
             </div>
           </div>
@@ -705,7 +702,7 @@
           >
             <span class="flex items-center justify-center space-x-2">
               <span>Send Message</span>
-              <i class="fas fa-paper-plane"></i>
+              <i data-lucide="send" class="fill-white h-5 w-5"></i>
             </span>
           </button>
         </form>
@@ -723,7 +720,7 @@
               <div
                 class="w-10 h-10 bg-gradient-to-r from-brand to-accent rounded-xl flex items-center justify-center"
               >
-                <i class="fas fa-graduation-cap text-white text-lg"></i>
+                <i data-lucide="graduation-cap" class="h-6 w-6"></i>
               </div>
               <h3 class="text-xl font-bold">Mind-Wave EduHub</h3>
             </div>
@@ -737,28 +734,28 @@
                 class="w-8 h-8 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-brand transition-colors"
                 aria-label="Facebook"
               >
-                <i class="fab fa-facebook-f text-sm"></i>
+                <i data-lucide="facebook" class="fill-white h-4 w-4"></i>
               </a>
               <a
                 href="#"
                 class="w-8 h-8 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-brand transition-colors"
                 aria-label="Twitter"
               >
-                <i class="fab fa-twitter text-sm"></i>
+                <i data-lucide="twitter" class="fill-white h-4 w-4"></i>
               </a>
               <a
                 href="#"
                 class="w-8 h-8 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-brand transition-colors"
                 aria-label="Instagram"
               >
-                <i class="fab fa-instagram text-sm"></i>
+                <i data-lucide="instagram" class="h-4 w-4"></i>
               </a>
               <a
                 href="#"
                 class="w-8 h-8 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-brand transition-colors"
                 aria-label="LinkedIn"
               >
-                <i class="fab fa-linkedin-in text-sm"></i>
+                <i data-lucide="linkedin" class="fill-white h-4 w-4"></i>
               </a>
             </div>
           </div>
@@ -873,7 +870,6 @@
         </div>
       </div>
     </footer>
-    <script src="scripts/theme-toggle.js"></script>
-    <script src="scripts/navigation.js"></script>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
