@@ -1,26 +1,26 @@
 # Mind-Wave EduHub
 
-A modern, responsive educational platform built with Vite, vanilla JavaScript, and Tailwind CSS. Features a clean, professional design with dark/light theme support and smooth animations.
+A modern, responsive educational platform built with Vite, vanilla JavaScript, and Tailwind CSS. Features a clean, professional design with dark/light theme support, a mobile top-sheet menu, and smooth animations.
 
 ## Features
 
-- 🎨 Modern, responsive design
-- 🌙 Dark/Light theme toggle
-- 📱 Mobile-first approach
-- ✨ Smooth animations and transitions
+- 🎨 Modern, responsive design (mobile-first)
+- 🌙 Dark/Light theme toggle (desktop header + mobile menu)
+- 📱 Mobile top-sheet menu with overlay and smooth slide animation
+- ✨ Smooth scroll and on-view animations
+- 🧩 Lucide icons rendered via `data-lucide` attributes
 - 🎓 Course showcase with ratings and details
-- 📞 Contact form with validation
+- 📞 Contact form with validation-friendly markup
 - ❓ Interactive FAQ section
-- 🔗 Social media integration
+- 🔗 Social links
 
 ## Tech Stack
 
-- **Vite** - Fast build tool and dev server
-- **Vanilla JavaScript** - No frameworks, pure JS
+- **Vite** - Fast dev server and optimized build
+- **Vanilla JavaScript** - No frameworks
 - **Tailwind CSS** - Utility-first styling (via npm)
-- **PostCSS** - CSS processing
-- **Font Awesome** - Icons (via npm)
-- **CSS Animations** - Custom keyframes and transitions
+- **PostCSS + Autoprefixer** - CSS processing
+- **Lucide** - Icon set (via npm)
 
 ## Getting Started
 
@@ -56,34 +56,29 @@ npm run preview
 
 ```
 mindwave/
-├── index.html          # Main HTML file
+├── index.html                 # Main HTML file
+├── public/
+│   └── robots.txt             # Search engine directives
 ├── src/
-│   ├── main.js         # Entry point
+│   ├── main.js                # Entry point (imports CSS + init scripts, registers Lucide icons)
 │   ├── styles/
-│   │   └── main.css    # Custom styles
-│   └── js/
-│       ├── theme-toggle.js    # Theme functionality
-│       └── navigation.js       # Navigation and animations
+│   │   └── main.css           # Tailwind + custom layers
+│   └── utils/
+│       ├── theme-toggle.js    # Theme toggle (desktop + mobile buttons)
+│       └── on-load.js         # Init helpers (optional future scripts)
 ├── package.json
+├── postcss.config.js
+├── tailwind.config.js
 ├── vite.config.js
 └── README.md
 ```
 
-## Under Development
+## Deployment Notes
 
-🚧 **Active Development Phase**
-
-- [ ] Backend integration for course enrollment
-- [ ] User authentication system
-- [ ] Payment gateway integration
-- [ ] Course video streaming
-- [ ] Student dashboard
-- [ ] Instructor portal
-- [ ] Progress tracking system
-- [ ] Certificate generation
-- [ ] Mobile app development
-- [ ] Advanced search and filtering
-- [ ] Multi-language support
+- For GitHub Pages, ensure `base` in `vite.config.js` matches your deployment:
+  - Relative base (works anywhere): `base: "./"`
+  - Repo base: `base: "/<your-repo-name>/"`
+- Deploy the contents of the `dist/` folder (not the source files).
 
 ## Contributing
 
