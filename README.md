@@ -1,6 +1,6 @@
 # Mind-Wave EduHub
 
-A modern, responsive educational platform of Mind-Wave EduHub built with HTML, CSS (Tailwind), and JavaScript. Features a clean, professional design with dark/light theme support and smooth animations.
+A modern, responsive educational platform built with Vite, vanilla JavaScript, and Tailwind CSS. Features a clean, professional design with dark/light theme support and smooth animations.
 
 ## Features
 
@@ -13,13 +13,77 @@ A modern, responsive educational platform of Mind-Wave EduHub built with HTML, C
 - ❓ Interactive FAQ section
 - 🔗 Social media integration
 
+## Tech Stack
+
+- **Vite** - Fast build tool and dev server
+- **Vanilla JavaScript** - No frameworks, pure JS
+- **Tailwind CSS** - Utility-first styling (via npm)
+- **PostCSS** - CSS processing
+- **Font Awesome** - Icons (via npm)
+- **CSS Animations** - Custom keyframes and transitions
+
 ## Getting Started
 
-1. Clone the repository
-2. Open `index.html` in your browser
-3. No build process required - runs directly in the browser
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Open your browser and navigate to `http://localhost:3000`
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist` directory.
+
+## Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```
+mindwave/
+├── index.html          # Main HTML file
+├── src/
+│   ├── main.js         # Entry point
+│   ├── styles/
+│   │   └── main.css    # Custom styles
+│   └── js/
+│       ├── theme-toggle.js    # Theme functionality
+│       └── navigation.js       # Navigation and animations
+├── package.json
+├── vite.config.js
+└── README.md
+```
 
 ## Under Development
+
+🚧 **Active Development Phase**
+
+- [ ] Backend integration for course enrollment
+- [ ] User authentication system
+- [ ] Payment gateway integration
+- [ ] Course video streaming
+- [ ] Student dashboard
+- [ ] Instructor portal
+- [ ] Progress tracking system
+- [ ] Certificate generation
+- [ ] Mobile app development
+- [ ] Advanced search and filtering
+- [ ] Multi-language support
 
 ## Contributing
 
