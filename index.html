@@ -58,19 +58,71 @@
           </nav>
           <div class="flex items-center space-x-4">
             <button
-              id="theme-toggle"
-              class="flex items-center justify-center rounded-full w-[3rem] h-[3rem] glass-effect hover:scale-110 transition-all duration-200"
+              id="theme-toggle-desktop"
+              class="hidden md:flex items-center justify-center rounded-full w-[3rem] h-[3rem] glass-effect hover:scale-110 transition-all duration-200"
               aria-label="Toggle theme"
             >
               <i data-lucide="moon"></i>
             </button>
-            <button class="md:hidden p-2 glass-effect rounded-lg">
+            <button
+              id="hamburger-menu-cta"
+              class="md:hidden p-2 glass-effect rounded-lg"
+              aria-label="Open menu"
+            >
               <i data-lucide="menu" class="h-5 w-5"></i>
             </button>
           </div>
         </div>
       </div>
     </header>
+
+    <!-- Mobile Top Sheet Menu -->
+    <div
+      id="mobile-menu-overlay"
+      class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden z-40"
+    ></div>
+    <div
+      id="mobile-menu"
+      class="fixed inset-x-0 top-0 z-50 -translate-y-full transition-transform duration-300 ease-out bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-b border-gray-200/20 dark:border-gray-800/50 md:hidden"
+      aria-hidden="true"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <div class="flex items-center space-x-2">
+          <div
+            class="w-9 h-9 bg-gradient-to-r from-brand to-accent rounded-xl flex items-center justify-center"
+          >
+            <i data-lucide="graduation-cap" class="text-white h-5 w-5"></i>
+          </div>
+          <span class="font-semibold">Mind-Wave EduHub</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <button
+            id="theme-toggle"
+            class="p-2 rounded-lg glass-effect"
+            aria-label="Toggle theme"
+          >
+            <i data-lucide="moon"></i>
+          </button>
+          <button
+            id="mobile-menu-close"
+            class="p-2 rounded-lg glass-effect"
+            aria-label="Close menu"
+          >
+            <i data-lucide="x" class="h-5 w-5"></i>
+          </button>
+        </div>
+      </div>
+      <nav class="px-6 pb-6">
+        <ul class="space-y-4 text-lg font-medium">
+          <li><a href="#hero" class="block hover:text-brand">Home</a></li>
+          <li><a href="#courses" class="block hover:text-brand">Courses</a></li>
+          <li><a href="#about" class="block hover:text-brand">About</a></li>
+          <li><a href="#contact" class="block hover:text-brand">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <!-- Hero -->
     <section

@@ -1,27 +1,32 @@
 import { createIcons, Sun, Moon } from "lucide";
 
 // Theme toggle functionality
-const toggleBtn = document.getElementById("theme-toggle");
 const root = document.documentElement;
+const desktopBtn = document.getElementById("theme-toggle-desktop");
+const mobileBtn = document.getElementById("theme-toggle");
 
-if (toggleBtn) {
-  const renderIcon = (icon) => {
-    toggleBtn.innerHTML = `<i data-lucide="${icon}"></i>`;
-    createIcons({
-      icons: { Sun, Moon },
-    });
-  };
+const renderIconInto = (buttonEl, icon) => {
+  if (!buttonEl) return;
+  buttonEl.innerHTML = `<i data-lucide="${icon}"></i>`;
+  createIcons({ icons: { Sun, Moon } });
+};
 
-  toggleBtn.addEventListener("click", () => {
-    if (root.classList.contains("dark")) {
-      root.classList.remove("dark");
-      renderIcon("moon");
-    } else {
-      root.classList.add("dark");
-      renderIcon("sun");
-    }
-  });
+const toggleTheme = () => {
+  if (root.classList.contains("dark")) {
+    root.classList.remove("dark");
+    renderIconInto(desktopBtn, "moon");
+    renderIconInto(mobileBtn, "moon");
+  } else {
+    root.classList.add("dark");
+    renderIconInto(desktopBtn, "sun");
+    renderIconInto(mobileBtn, "sun");
+  }
+};
 
-  // Initial render
-  renderIcon(root.classList.contains("dark") ? "sun" : "moon");
-}
+if (desktopBtn) desktopBtn.addEventListener("click", toggleTheme);
+if (mobileBtn) mobileBtn.addEventListener("click", toggleTheme);
+
+// Initial render state
+const initial = root.classList.contains("dark") ? "sun" : "moon";
+renderIconInto(desktopBtn, initial);
+renderIconInto(mobileBtn, initial);

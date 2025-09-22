@@ -22,11 +22,12 @@ import {
   Instagram,
   Linkedin,
   Sun,
+  X,
 } from "lucide";
 
 import "./styles/main.css";
 import "./utils/theme-toggle.js";
-import "./utils/navigation.js";
+import "./utils/on-load.js";
 
 createIcons({
   icons: {
@@ -51,5 +52,6 @@ createIcons({
     Instagram,
     Linkedin,
     Sun,
+    X,
   },
 });
