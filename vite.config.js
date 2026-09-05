@@ -1,10 +1,10 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/Mind-Wave-Eduhub/",
+  base: "/",
   root: ".",
   esbuild: {
-    drop: ["console", "debugger"], // removes console.* and debugger in production build
+    drop: ["console", "debugger"],
   },
   build: {
     outDir: "dist",

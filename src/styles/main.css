@@ -1,24 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;0,800;1,700&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=PT+Sans:wght@400;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Rajdhani:wght@600;700&family=Roboto:wght@400;500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles for Mind-Wave EduHub */
+@layer base {
+  html {
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: auto;
+  }
+
+  body {
+    @apply bg-white font-body text-navy antialiased;
+  }
+
+  main section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+
+  @media (max-width: 1023px) {
+    .nav-link.is-active::after {
+      display: none;
+    }
+  }
+
+  :focus-visible {
+    outline: 2px solid #2db9f0;
+    outline-offset: 3px;
+  }
+}
+
 @layer components {
-  .gradient-text {
-    background: linear-gradient(135deg, #3b82f6, #8b5cf6, #f59e0b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  .skip-link {
+    @apply absolute left-4 top-0 z-[100] -translate-y-full rounded bg-navy px-4 py-2 text-sm font-semibold text-white transition-transform;
   }
 
-  .glass-effect {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+  .skip-link:focus {
+    @apply translate-y-4;
   }
 
-  .dark .glass-effect {
-    background: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  .nav-link {
+    @apply relative text-sm font-semibold text-navy/80 transition-colors duration-200 hover:text-purple;
+    text-transform: none;
+    letter-spacing: 0.01em;
+  }
+
+  .nav-link.is-active {
+    @apply text-purple;
+  }
+
+  .nav-link.is-active::after {
+    content: "";
+    @apply absolute -bottom-1 left-0 h-0.5 w-full bg-cyan;
+  }
+
+  .section-kicker {
+    @apply font-display text-xs font-bold uppercase tracking-[0.28em] text-purple-deep;
+  }
+
+  .section-title {
+    @apply font-heading text-4xl font-bold uppercase leading-tight text-navy md:text-5xl;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-cyan px-6 py-3 font-display text-sm font-bold uppercase tracking-[0.16em] text-navy shadow-soft transition hover:bg-cyan-bright hover:shadow-card;
+  }
+
+  .btn-accent {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-orange px-6 py-3 font-display text-sm font-bold uppercase tracking-[0.16em] text-navy shadow-soft transition hover:brightness-105 hover:shadow-card;
+  }
+
+  header .btn-accent {
+    text-transform: none;
+    letter-spacing: 0.02em;
+  }
+
+  .btn-purple {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-purple px-6 py-3 font-display text-sm font-bold uppercase tracking-[0.16em] text-white shadow-soft transition hover:bg-purple-deep hover:shadow-card;
+  }
+
+  .card {
+    @apply rounded-2xl bg-white p-6 shadow-soft;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      105deg,
+      rgba(11, 28, 45, 0.82) 0%,
+      rgba(0, 33, 71, 0.55) 48%,
+      rgba(11, 28, 45, 0.28) 100%
+    );
   }
 }

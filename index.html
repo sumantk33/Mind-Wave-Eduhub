@@ -1,927 +1,837 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
+<!doctype html>
+<html lang="en-IN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Meta Tags (Need to revisit later) -->
     <meta
       name="description"
-      content="Mind-Wave EduHub - Empowering education with expert-led courses in Web Development, Data Science, and Mobile App Development. Learn from industry professionals with 98% success rate. Enroll now for self-paced, high-quality learning experiences."
+      content="Discover Mindwave Edu Hub, empowering educators with innovative training, technology, and empathy-driven learning. Join us to transform education today."
     />
     <meta
       name="keywords"
-      content="online education, web development course, data science course, mobile app development, programming courses, online learning, skill development, professional certification"
+      content="Mindwave Edu Hub, teacher training, TAT, TET, Student Science Camps, Dharwad, pedagogy, experiential learning"
     />
-    <meta name="author" content="Mind-Wave EduHub" />
+    <meta name="author" content="Mindwave Edu Hub" />
     <meta name="robots" content="index, follow" />
-
-    <title>Mind-Wave EduHub</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Mindwave Edu Hub</title>
   </head>
-  <body
-    class="bg-gradient-to-br from-gray-50 to-blue-50 text-gray-900 dark:from-gray-950 dark:to-gray-900 dark:text-gray-100 transition-all duration-300"
-  >
-    <!-- Header -->
+  <body class="overflow-x-hidden bg-white text-navy">
+    <a class="skip-link" href="#home">Skip to content</a>
+
     <header
-      class="sticky top-0 z-50 glass-effect backdrop-blur-md border-b border-gray-200/20 dark:border-gray-800/50"
+      class="sticky top-0 z-50 border-b border-navy/10 bg-white/95 backdrop-blur-md"
     >
-      <div class="max-w-7xl mx-auto px-6 py-4">
-        <div class="flex justify-between items-center">
-          <div class="flex items-center space-x-2">
-            <div
-              class="w-10 h-10 bg-gradient-to-r from-brand to-accent rounded-xl flex items-center justify-center"
+      <div
+        class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 md:px-6"
+      >
+        <a
+          href="#home"
+          class="flex min-w-0 items-center gap-2 sm:gap-3"
+          aria-label="Mindwave Edu Hub home"
+        >
+          <svg
+            class="h-10 w-10 shrink-0"
+            viewBox="0 0 64 64"
+            aria-hidden="true"
+          >
+            <path
+              d="M6 40c11-7 18-18 26-22 8-4 16-3.2 25 2.4"
+              fill="none"
+              stroke="#0b1c2d"
+              stroke-width="5.8"
+              stroke-linecap="round"
+            />
+            <path
+              d="M8 47c11-7 18-17 25-20.6 8-3.6 16-2.8 24 2.2"
+              fill="none"
+              stroke="#e2725b"
+              stroke-width="3.3"
+              stroke-linecap="round"
+            />
+            <path
+              d="M10 54c10-6 17-14 24-17.2 7-3.2 14.5-2.4 22 1.8"
+              fill="none"
+              stroke="#0b1c2d"
+              stroke-width="3.3"
+              stroke-linecap="round"
+            />
+            <circle cx="48" cy="12.5" r="2.5" fill="#0b1c2d" />
+            <circle cx="54" cy="16.8" r="1.8" fill="#0b1c2d" />
+            <circle cx="43.2" cy="10.2" r="1.6" fill="#0b1c2d" />
+            <circle cx="57.2" cy="11.4" r="1.15" fill="#0b1c2d" />
+          </svg>
+          <span class="leading-none">
+            <span
+              class="block font-display text-base font-extrabold capitalize tracking-normal text-navy sm:text-lg"
+              >Mindwave</span
             >
-              <i data-lucide="graduation-cap" class="text-white h-7 w-7"></i>
-            </div>
-            <h1 class="text-2xl font-bold gradient-text">Mind-Wave EduHub</h1>
-          </div>
-          <nav class="hidden md:flex space-x-8">
-            <a
-              href="#hero"
-              class="hover:text-brand transition-colors duration-200 font-medium"
-              >Home</a
+            <span
+              class="block font-ui text-[11px] font-semibold capitalize tracking-normal text-purple-deep"
+              >Edu Hub</span
             >
-            <a
-              href="#courses"
-              class="hover:text-brand transition-colors duration-200 font-medium"
-              >Courses</a
-            >
-            <a
-              href="#about"
-              class="hover:text-brand transition-colors duration-200 font-medium"
-              >About</a
-            >
-            <a
-              href="#contact"
-              class="hover:text-brand transition-colors duration-200 font-medium"
-              >Contact</a
-            >
-          </nav>
-          <div class="flex items-center space-x-4">
-            <button
-              id="theme-toggle-desktop"
-              class="hidden md:flex items-center justify-center rounded-full w-[3rem] h-[3rem] glass-effect hover:scale-110 transition-all duration-200"
-              aria-label="Toggle theme"
-            >
-              <i data-lucide="moon"></i>
-            </button>
-            <button
-              id="hamburger-menu-cta"
-              class="md:hidden p-2 glass-effect rounded-lg"
-              aria-label="Open menu"
-            >
-              <i data-lucide="menu" class="h-5 w-5"></i>
-            </button>
-          </div>
+          </span>
+        </a>
+
+        <nav class="hidden items-center gap-5 lg:flex" aria-label="Primary">
+          <a class="nav-link is-active" href="#home">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#mentors">Mentors</a>
+          <a class="nav-link" href="#facilities">Facilities</a>
+          <a class="nav-link" href="#programs">Programs</a>
+          <a class="nav-link" href="#curriculum">Curriculum</a>
+          <a class="nav-link" href="#faculty">Faculty</a>
+          <a class="nav-link" href="#outcomes">Outcomes</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <a
+            class="btn-accent hidden !px-4 !py-2 text-xs sm:inline-flex"
+            href="https://forms.gle/UM9dDP7R35U9JktQ8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Apply now
+            <i data-lucide="external-link" class="h-3.5 w-3.5"></i>
+          </a>
+          <button
+            id="hamburger-menu-cta"
+            class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-navy/15 lg:hidden"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <i data-lucide="menu" class="h-5 w-5"></i>
+          </button>
         </div>
       </div>
     </header>
 
-    <!-- Mobile Top Sheet Menu -->
     <div
       id="mobile-menu-overlay"
-      class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden z-40"
+      class="fixed inset-0 z-40 hidden bg-navy/50 lg:hidden"
     ></div>
     <div
       id="mobile-menu"
-      class="fixed inset-x-0 top-0 z-50 -translate-y-full transition-transform duration-300 ease-out bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-b border-gray-200/20 dark:border-gray-800/50 md:hidden"
+      class="fixed inset-y-0 right-0 z-50 w-[min(20rem,88vw)] translate-x-full bg-white shadow-card transition-transform duration-300 lg:hidden"
       aria-hidden="true"
+      role="dialog"
+      aria-label="Mobile navigation"
     >
       <div
-        class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"
+        class="flex items-center justify-between border-b border-navy/10 px-5 py-4"
       >
-        <div class="flex items-center space-x-2">
-          <div
-            class="w-9 h-9 bg-gradient-to-r from-brand to-accent rounded-xl flex items-center justify-center"
-          >
-            <i data-lucide="graduation-cap" class="text-white h-5 w-5"></i>
-          </div>
-          <span class="font-semibold">Mind-Wave EduHub</span>
-        </div>
-        <div class="flex items-center space-x-2">
-          <button
-            id="theme-toggle"
-            class="p-2 rounded-lg glass-effect"
-            aria-label="Toggle theme"
-          >
-            <i data-lucide="moon"></i>
-          </button>
-          <button
-            id="mobile-menu-close"
-            class="p-2 rounded-lg glass-effect"
-            aria-label="Close menu"
-          >
-            <i data-lucide="x" class="h-5 w-5"></i>
-          </button>
-        </div>
+        <p
+          class="font-display text-sm font-extrabold uppercase tracking-[0.16em]"
+        >
+          Explore
+        </p>
+        <button
+          id="mobile-menu-close"
+          class="rounded-lg p-2"
+          aria-label="Close menu"
+        >
+          <i data-lucide="x" class="h-5 w-5"></i>
+        </button>
       </div>
-      <nav class="px-6 pb-6">
-        <ul class="space-y-4 text-lg font-medium">
-          <li><a href="#hero" class="block hover:text-brand">Home</a></li>
-          <li><a href="#courses" class="block hover:text-brand">Courses</a></li>
-          <li><a href="#about" class="block hover:text-brand">About</a></li>
-          <li><a href="#contact" class="block hover:text-brand">Contact</a></li>
-        </ul>
+      <nav class="flex flex-col gap-1 px-4 py-4" aria-label="Mobile">
+        <a class="nav-link rounded-lg px-3 py-3" href="#home">Home</a>
+        <a class="nav-link rounded-lg px-3 py-3" href="#about">About</a>
+        <a class="nav-link rounded-lg px-3 py-3" href="#mentors">Mentors</a>
+        <a class="nav-link rounded-lg px-3 py-3" href="#facilities"
+          >Facilities</a
+        >
+        <a class="nav-link rounded-lg px-3 py-3" href="#programs">Programs</a>
+        <a class="nav-link rounded-lg px-3 py-3" href="#curriculum"
+          >Curriculum</a
+        >
+        <a class="nav-link rounded-lg px-3 py-3" href="#faculty">Faculty</a>
+        <a class="nav-link rounded-lg px-3 py-3" href="#outcomes">Outcomes</a>
+        <a class="nav-link rounded-lg px-3 py-3" href="#contact">Contact</a>
+        <a
+          class="btn-accent mt-3"
+          href="https://forms.gle/UM9dDP7R35U9JktQ8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Apply Now
+        </a>
       </nav>
     </div>
 
-    <!-- Hero -->
-    <section
-      id="hero"
-      class="relative overflow-hidden text-center py-24 bg-gradient-to-br from-brand/10 via-accent/5 to-brand/10 dark:from-brand/20 dark:via-accent/10 dark:to-brand/20"
-    >
-      <!-- Background decorative elements -->
-      <div class="absolute inset-0 overflow-hidden">
+    <main>
+      <section id="home" class="relative min-h-[92vh] overflow-hidden">
+        <img
+          src="/images/hero-campus.jpg"
+          alt="Mindwave Edu Hub campus in Dharwad"
+          class="absolute inset-0 h-full w-full object-cover"
+        />
+        <div class="hero-overlay absolute inset-0"></div>
         <div
-          class="absolute -top-40 -right-40 w-80 h-80 bg-brand/20 rounded-full blur-3xl animate-pulse-slow"
-        ></div>
-        <div
-          class="absolute -bottom-40 -left-40 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-pulse-slow"
-        ></div>
-      </div>
-
-      <div class="relative max-w-6xl mx-auto px-6">
-        <div class="animate-fade-in">
-          <h2 class="text-5xl md:text-7xl font-bold mb-8 leading-tight">
-            <span class="gradient-text">Empowering Education</span><br />
-            <span class="text-gray-700 dark:text-gray-300"
-              >One Course at a Time</span
-            >
-          </h2>
-          <p
-            class="text-xl max-w-3xl mx-auto mb-12 text-gray-600 dark:text-gray-400 leading-relaxed"
+          class="relative mx-auto flex min-h-[92vh] max-w-7xl flex-col justify-center px-4 py-20 md:px-6"
+        >
+          <p class="section-kicker text-cyan">Home</p>
+          <h1
+            class="mt-4 max-w-4xl font-display text-4xl font-extrabold uppercase leading-[0.95] tracking-wide text-white drop-shadow sm:text-5xl md:text-7xl"
           >
-            Discover transformative learning experiences with our expertly
-            crafted courses. From beginner to advanced, we provide the knowledge
-            and skills you need to excel in your career.
+            Mindwave Edu Hub
+          </h1>
+          <p class="mt-5 font-serif text-2xl italic text-cyan md:text-4xl">
+            Transforming Education
           </p>
-          <div
-            class="flex flex-col sm:flex-row gap-4 justify-center items-center"
-          >
-            <a
-              href="#courses"
-              class="group px-8 py-4 bg-gradient-to-r from-brand to-brand-dark text-white rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 font-semibold"
-            >
-              <span class="flex items-center space-x-2">
-                <span>Explore Courses</span>
-                <i
-                  data-lucide="arrow-right"
-                  class="h-5 w-5 group-hover:translate-x-1 transition-transform"
-                ></i>
-              </span>
+          <p class="mt-3 max-w-xl font-body text-lg text-cream md:text-xl">
+            Where Empathy meets Scholarship
+          </p>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a class="btn-primary" href="#programs">
+              Explore
+              <i data-lucide="arrow-right" class="h-4 w-4"></i>
             </a>
-            <a
-              href="#about"
-              class="px-8 py-4 glass-effect text-gray-700 dark:text-gray-300 rounded-2xl hover:bg-brand/10 transition-all duration-300 font-semibold"
-            >
-              Learn More
-            </a>
+            <a class="btn-accent" href="#about">About Us</a>
           </div>
         </div>
+      </section>
 
-        <!-- Stats -->
+      <section id="about" class="bg-cream">
         <div
-          class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 animate-slide-up"
+          class="mx-auto grid max-w-7xl items-center gap-12 px-4 py-20 md:grid-cols-2 md:px-6"
         >
-          <div class="glass-effect p-6 rounded-2xl text-center">
-            <div class="text-3xl font-bold text-brand mb-2">500+</div>
-            <div class="text-gray-600 dark:text-gray-400">
-              Students Enrolled
-            </div>
-          </div>
-          <div class="glass-effect p-6 rounded-2xl text-center">
-            <div class="text-3xl font-bold text-accent mb-2">50+</div>
-            <div class="text-gray-600 dark:text-gray-400">
-              Expert Instructors
-            </div>
-          </div>
-          <div class="glass-effect p-6 rounded-2xl text-center">
-            <div class="text-3xl font-bold text-brand mb-2">98%</div>
-            <div class="text-gray-600 dark:text-gray-400">Success Rate</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Courses -->
-    <section id="courses" class="py-20 px-6 max-w-7xl mx-auto">
-      <div class="text-center mb-16">
-        <h3 class="text-4xl md:text-5xl font-bold mb-6">
-          <span class="gradient-text">Our Courses</span>
-        </h3>
-        <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-          Hand-picked courses designed by industry experts to accelerate your
-          learning journey
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Course 1 -->
-        <div
-          class="flex flex-col group glass-effect rounded-3xl overflow-hidden hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
-        >
-          <div class="relative">
-            <div
-              class="aspect-video bg-gradient-to-br from-brand/20 to-accent/20 flex items-center justify-center"
-            >
-              <i data-lucide="code-xml" class="h-16 w-16 text-brand/60"></i>
-            </div>
-            <div
-              class="absolute top-4 right-4 bg-orange-700 text-white px-3 py-1 rounded-full text-sm font-semibold"
-            >
-              Popular
-            </div>
-          </div>
-          <div class="p-6 flex flex-col justify-between flex-1">
-            <div class="flex flex-col">
-              <div class="flex items-center justify-between mb-3">
-                <h4 class="text-xl font-bold text-gray-800 dark:text-gray-200">
-                  Web Development Mastery
-                </h4>
-                <div class="flex items-center text-yellow-500">
-                  <i data-lucide="star" class="h-5 w-5 fill-yellow-500"></i>
-                  <span class="ml-1 text-sm font-medium">4.9</span>
-                </div>
-              </div>
-              <p class="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
-                Master modern web development with HTML, CSS, JavaScript, and
-                React. Build real-world projects and land your dream job.
-              </p>
-            </div>
-            <div class="flex flex-col">
-              <div class="flex items-center justify-between mb-4">
-                <div class="flex items-center text-sm text-gray-500">
-                  <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
-                  <span>40 hours</span>
-                </div>
-                <div class="flex items-center text-sm text-gray-500">
-                  <i data-lucide="users" class="h-4 w-4 mr-2 fill-gray-500"></i>
-                  <span>1,200 students</span>
-                </div>
-              </div>
-              <div class="flex items-center justify-between">
-                <div class="flex items-center">
-                  <div
-                    class="w-8 h-8 bg-gradient-to-r from-brand to-accent rounded-full flex items-center justify-center mr-3"
-                  >
-                    <span class="text-white text-sm font-bold">JD</span>
-                  </div>
-                  <div>
-                    <div class="text-sm font-medium">John Doe</div>
-                    <div class="text-xs text-gray-500">Senior Developer</div>
-                  </div>
-                </div>
-                <button
-                  class="px-6 py-2 bg-gradient-to-r from-brand to-brand-dark text-white rounded-xl hover:shadow-lg transition-all duration-200"
+          <div>
+            <p class="section-kicker">About Us</p>
+            <h2 class="section-title mt-3">Who Are We?</h2>
+            <p class="mt-6 text-lg leading-relaxed text-navy/80">
+              Mindwave Edu Hub is a revolutionary platform dedicated to
+              empowering educators and students through innovative training,
+              meaningful resources, and hands-on learning experiences. We
+              believe that true education emerges when scholarship meets
+              empathy.
+            </p>
+            <div class="mt-8 grid gap-4">
+              <article class="card border-l-4 border-purple">
+                <h3
+                  class="font-heading text-2xl font-bold uppercase text-purple"
                 >
-                  Enroll Now
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Course 2 -->
-        <div
-          class="flex flex-col group glass-effect rounded-3xl overflow-hidden hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
-        >
-          <div class="relative">
-            <div
-              class="aspect-video bg-gradient-to-br from-accent/20 to-brand/20 flex items-center justify-center"
-            >
-              <i data-lucide="chart-line" class="h-16 w-16 text-accent/60"></i>
-            </div>
-            <div
-              class="absolute top-4 right-4 bg-blue-700 text-white px-3 py-1 rounded-full text-sm font-semibold"
-            >
-              New
-            </div>
-          </div>
-          <div class="p-6 flex flex-col justify-between flex-1">
-            <div class="flex flex-col">
-              <div class="flex items-center justify-between mb-3">
-                <h4 class="text-xl font-bold text-gray-800 dark:text-gray-200">
-                  Data Science & Analytics
-                </h4>
-                <div class="flex items-center text-yellow-500">
-                  <i data-lucide="star" class="h-5 w-5 fill-yellow-500"></i>
-                  <span class="ml-1 text-sm font-medium">4.8</span>
-                </div>
-              </div>
-              <p class="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
-                Learn Python, machine learning, and data visualization. Turn
-                data into actionable insights for business growth.
-              </p>
-            </div>
-            <div class="flex flex-col">
-              <div class="flex items-center justify-between mb-4">
-                <div class="flex items-center text-sm text-gray-500">
-                  <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
-                  <span>35 hours</span>
-                </div>
-                <div class="flex items-center text-sm text-gray-500">
-                  <i data-lucide="users" class="h-4 w-4 mr-2 fill-gray-500"></i>
-                  <span>890 students</span>
-                </div>
-              </div>
-              <div class="flex items-center justify-between">
-                <div class="flex items-center">
-                  <div
-                    class="w-8 h-8 bg-gradient-to-r from-accent to-brand rounded-full flex items-center justify-center mr-3"
-                  >
-                    <span class="text-white text-sm font-bold">JS</span>
-                  </div>
-                  <div>
-                    <div class="text-sm font-medium">Jane Smith</div>
-                    <div class="text-xs text-gray-500">Data Scientist</div>
-                  </div>
-                </div>
-                <button
-                  class="px-6 py-2 bg-gradient-to-r from-brand to-brand-dark text-white rounded-xl hover:shadow-lg transition-all duration-200"
+                  Our Vision
+                </h3>
+                <p class="mt-2 leading-relaxed text-navy/80">
+                  To empower 21st-century educators and learners through
+                  innovative training rooted in mindset shifts and technology
+                  integration, fostering student-centered, inclusive, and
+                  creative learning environments.
+                </p>
+              </article>
+              <article class="card border-l-4 border-cyan">
+                <h3
+                  class="font-heading text-2xl font-bold uppercase text-navy-deep"
                 >
-                  Enroll Now
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Course 3 -->
-        <div
-          class="flex flex-col group glass-effect rounded-3xl overflow-hidden hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
-        >
-          <div class="relative">
-            <div
-              class="aspect-video bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center"
-            >
-              <i
-                data-lucide="tablet-smartphone"
-                class="h-16 w-16 text-purple-500/60"
-              ></i>
-            </div>
-            <div
-              class="absolute top-4 right-4 bg-purple-700 text-white px-3 py-1 rounded-full text-sm font-semibold"
-            >
-              Trending
-            </div>
-          </div>
-          <div class="p-6 flex flex-col justify-between flex-1">
-            <div class="flex flex-col">
-              <div class="flex items-center justify-between mb-3">
-                <h4 class="text-xl font-bold text-gray-800 dark:text-gray-200">
-                  Mobile App Development
-                </h4>
-                <div class="flex items-center text-yellow-500">
-                  <i data-lucide="star" class="h-5 w-5 fill-yellow-500"></i>
-                  <span class="ml-1 text-sm font-medium">4.7</span>
-                </div>
-              </div>
-              <p class="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
-                Build cross-platform mobile apps with React Native. Create apps
-                that work on both iOS and Android.
-              </p>
-            </div>
-            <div class="flex flex-col">
-              <div class="flex items-center justify-between mb-4">
-                <div class="flex items-center text-sm text-gray-500">
-                  <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
-                  <span>30 hours</span>
-                </div>
-                <div class="flex items-center text-sm text-gray-500">
-                  <i data-lucide="users" class="h-4 w-4 mr-2 fill-gray-500"></i>
-                  <span>650 students</span>
-                </div>
-              </div>
-              <div class="flex items-center justify-between">
-                <div class="flex items-center">
-                  <div
-                    class="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-3"
-                  >
-                    <span class="text-white text-sm font-bold">AL</span>
-                  </div>
-                  <div>
-                    <div class="text-sm font-medium">Alex Lee</div>
-                    <div class="text-xs text-gray-500">Mobile Developer</div>
-                  </div>
-                </div>
-                <button
-                  class="px-6 py-2 bg-gradient-to-r from-brand to-brand-dark text-white rounded-xl hover:shadow-lg transition-all duration-200"
+                  Our Mission
+                </h3>
+                <p class="mt-2 leading-relaxed text-navy/80">
+                  To equip teachers with modern pedagogical skills, emotional
+                  intelligence, and technological tools that inspire curiosity,
+                  critical thinking, and lifelong learning.
+                </p>
+              </article>
+              <article class="card border-l-4 border-orange">
+                <h3
+                  class="font-heading text-2xl font-bold uppercase text-terracotta"
                 >
-                  Enroll Now
-                </button>
-              </div>
+                  The Need
+                </h3>
+                <p class="mt-2 leading-relaxed text-navy/80">
+                  Education today demands a paradigm shift from traditional
+                  methods to engaging, personalized, and experiential learning.
+                  Mind-Wave addresses this need by supporting educators
+                  holistically—professionally, emotionally, and intellectually.
+                </p>
+              </article>
             </div>
           </div>
+          <figure class="overflow-hidden rounded-3xl shadow-card">
+            <img
+              src="/images/about-compass.jpg"
+              alt="Compass pointing toward Vision"
+              class="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </figure>
         </div>
-      </div>
+      </section>
 
-      <!-- FAQ -->
-      <div class="mt-20">
-        <h4 class="text-3xl font-bold text-center mb-12">
-          <span class="gradient-text">Frequently Asked Questions</span>
-        </h4>
-        <div class="max-w-4xl mx-auto space-y-4">
-          <details
-            class="group glass-effect p-6 rounded-2xl hover:shadow-lg transition-all duration-200"
-          >
-            <summary
-              class="cursor-pointer font-semibold text-lg flex items-center justify-between"
+      <section id="mentors" class="bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-20 md:px-6">
+          <p class="section-kicker">Overview</p>
+          <h2 class="section-title mt-3">The Team</h2>
+          <p class="mt-4 max-w-3xl text-navy/75">
+            Mentors who guide Mindwave’s work in science, justice, and
+            education.
+          </p>
+
+          <div class="mt-12 grid gap-8 md:grid-cols-3">
+            <article
+              class="overflow-hidden rounded-3xl bg-navy text-white shadow-card"
             >
-              <span>How do I enroll in a course?</span>
-              <i
-                data-lucide="chevron-down"
-                class="group-open:rotate-180 transition-transform duration-200"
-              ></i>
-            </summary>
-            <p class="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed">
-              Simply click on the "Enroll Now" button for your chosen course,
-              fill out the enrollment form, and you'll receive instant access to
-              all course materials and resources.
-            </p>
-          </details>
-          <details
-            class="group glass-effect p-6 rounded-2xl hover:shadow-lg transition-all duration-200"
-          >
-            <summary
-              class="cursor-pointer font-semibold text-lg flex items-center justify-between"
+              <img
+                src="/images/mentor-rao.png"
+                alt="Bharata Ratna Professor C.N.R. Rao"
+                class="h-80 w-full object-cover object-top"
+                loading="lazy"
+              />
+              <div class="bg-purple p-5">
+                <h3 class="font-heading text-xl font-bold uppercase">
+                  Bharata Ratna Professor C.N.R. Rao
+                </h3>
+                <p class="mt-1 text-sm text-cream/80">Mentor</p>
+              </div>
+            </article>
+            <article
+              class="overflow-hidden rounded-3xl bg-navy text-white shadow-card"
             >
-              <span>Are courses self-paced?</span>
-              <i
-                data-lucide="chevron-down"
-                class="group-open:rotate-180 transition-transform duration-200"
-              ></i>
-            </summary>
-            <p class="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed">
-              Yes! All our courses are designed to be completely flexible with
-              your schedule. Learn at your own pace, access materials 24/7, and
-              complete assignments when convenient for you.
-            </p>
-          </details>
-          <details
-            class="group glass-effect p-6 rounded-2xl hover:shadow-lg transition-all duration-200"
-          >
-            <summary
-              class="cursor-pointer font-semibold text-lg flex items-center justify-between"
+              <img
+                src="/images/mentor-kiran.png"
+                alt="Dr A. S. Kiran Kumar, Ex-Chairman, ISRO"
+                class="h-80 w-full object-cover object-top"
+                loading="lazy"
+              />
+              <div class="bg-cyan p-5 text-navy">
+                <h3 class="font-heading text-xl font-bold uppercase">
+                  Dr A. S. Kiran Kumar
+                </h3>
+                <p class="mt-1 text-sm">Ex-Chairman, ISRO</p>
+              </div>
+            </article>
+            <article
+              class="overflow-hidden rounded-3xl bg-navy text-white shadow-card"
             >
-              <span>Do you offer certificates?</span>
-              <i
-                data-lucide="chevron-down"
-                class="group-open:rotate-180 transition-transform duration-200"
-              ></i>
-            </summary>
-            <p class="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed">
-              Absolutely! Upon successful completion of any course, you'll
-              receive a professional certificate that you can add to your
-              LinkedIn profile and resume.
-            </p>
-          </details>
-          <details
-            class="group glass-effect p-6 rounded-2xl hover:shadow-lg transition-all duration-200"
-          >
-            <summary
-              class="cursor-pointer font-semibold text-lg flex items-center justify-between"
-            >
-              <span>What if I need help during the course?</span>
-              <i
-                data-lucide="chevron-down"
-                class="group-open:rotate-180 transition-transform duration-200"
-              ></i>
-            </summary>
-            <p class="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed">
-              Our instructors and support team are always available to help. You
-              can reach out through our discussion forums, email support, or
-              schedule one-on-one sessions with instructors.
-            </p>
-          </details>
+              <img
+                src="/images/mentor-patil.png"
+                alt="Justice Shivaraj Patil, Ex Supreme Court Judge"
+                class="h-80 w-full object-cover object-top"
+                loading="lazy"
+              />
+              <div class="bg-purple-deep p-5">
+                <h3 class="font-heading text-xl font-bold uppercase">
+                  Justice Shivaraj Patil
+                </h3>
+                <p class="mt-1 text-sm text-cream/80">Ex Supreme Court Judge</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="mt-10 grid gap-6 lg:grid-cols-2">
+            <article class="rounded-3xl bg-cream p-6 shadow-soft">
+              <h3 class="font-heading text-2xl font-bold uppercase text-purple">
+                Advisors
+              </h3>
+              <p class="mt-3 leading-relaxed text-navy/80">
+                Dr. Indumati Rao, Dr. Gururaj Karajgi, Mr. Suresh Kulkarni, Mr.
+                Tikota R N, Dr. Ayachit N H, Mr. Biradar N M, Mr. Jayachandra
+                AN, Mr. Abhishek AS.
+              </p>
+            </article>
+            <article class="rounded-3xl bg-mist p-6 shadow-soft">
+              <h3
+                class="font-heading text-2xl font-bold uppercase text-navy-deep"
+              >
+                Resource Persons
+              </h3>
+              <p class="mt-3 leading-relaxed text-navy/80">
+                Brig Itnal S, Dr. Madhav Bhat, Dr. Surendranath NM, Dr.
+                Manjunatha B, Mr. Sagar AH, Mr. Chetan Sampradaya, Dr. Manjunath
+                S, Mrs. Sudha Hegde, Dr. A. Kulkarni, Mrs. Deepa Garg and
+                others...
+              </p>
+            </article>
+          </div>
+
+          <!-- <figure class="mt-12 overflow-hidden rounded-3xl bg-navy shadow-card">
+            <img
+              src="/images/team-cutout.png"
+              alt="The Mindwave team"
+              class="mx-auto h-auto max-h-[28rem] min-h-[16rem] w-full object-contain"
+              width="1600"
+              height="900"
+              loading="lazy"
+            />
+          </figure> -->
+          <figure class="mt-6 overflow-hidden rounded-3xl shadow-card">
+            <img
+              src="/images/team-composite.jpg"
+              alt="TEAM MINDWAVE: Mr. Subhash Patil, Mr. P.V. Hiremath, Prof. S.M. Shivaprasad, Mr. Mahesh Masal, and Mr. Uday Shankar S.M"
+              class="aspect-[16/9] h-auto w-full object-cover"
+              width="1600"
+              height="900"
+              loading="lazy"
+            />
+          </figure>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- About -->
-    <section
-      id="about"
-      class="py-20 px-6 bg-gradient-to-br from-brand/5 via-accent/5 to-brand/5 dark:from-brand/10 dark:via-accent/10 dark:to-brand/10"
-    >
-      <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-16">
-          <h3 class="text-4xl md:text-5xl font-bold mb-6">
-            <span class="gradient-text">About Mind-Wave EduHub</span>
-          </h3>
+      <section id="facilities" class="bg-mist">
+        <div class="mx-auto max-w-7xl px-4 py-20 md:px-6">
+          <p class="section-kicker">Who Transform</p>
+          <h2 class="section-title mt-3">Our Facilities</h2>
+          <p class="mt-4 max-w-3xl text-navy/75">
+            A green campus with appropriate ambience and sophisticated
+            facilities.
+          </p>
+
+          <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <article class="overflow-hidden rounded-3xl bg-white shadow-soft">
+              <img
+                src="/images/facility-study.jpg"
+                alt="Computer lab and modern classroom"
+                class="h-52 w-full object-cover"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="font-heading text-2xl font-bold uppercase">
+                  Learning Hub
+                </h3>
+                <p class="mt-2 text-navy/75">
+                  A computer lab and modern classroom with digital and internet
+                  connect, and employing contemporary tools like AI/VR.
+                </p>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-3xl bg-white shadow-soft">
+              <img
+                src="/images/facility-science.jpg"
+                alt="Science and mathematics laboratory"
+                class="h-52 w-full object-cover"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="font-heading text-2xl font-bold uppercase">
+                  Exploration Lab
+                </h3>
+                <p class="mt-2 text-navy/75">
+                  A dedicated Science and Mathematics Laboratory to facilitate
+                  experiential learning (Gamification of Education).
+                </p>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-3xl bg-white shadow-soft">
+              <img
+                src="/images/facility-tech.jpg"
+                alt="Technology lab with holographic visualization"
+                class="h-52 w-full object-cover"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="font-heading text-2xl font-bold uppercase">
+                  Tech Lab
+                </h3>
+                <p class="mt-2 text-navy/75">
+                  Trainers and resource persons of high quality and relevant
+                  experience.
+                </p>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-3xl bg-white shadow-soft">
+              <img
+                src="/images/facility-tech.jpg"
+                alt="Technology lab with holographic visualization"
+                class="h-52 w-full object-cover"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="font-heading text-2xl font-bold uppercase">
+                  Who Transform
+                </h3>
+                <p class="mt-2 text-navy/75">
+                  Trainers and resource persons of high quality and relevant
+                  experience.
+                </p>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-3xl bg-white shadow-soft">
+              <img
+                src="/images/facility-wireframe.jpg"
+                alt="Who Transform"
+                class="h-52 w-full object-cover"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="font-heading text-2xl font-bold uppercase">
+                  Eco-Sphere
+                </h3>
+                <p class="mt-2 text-navy/75">
+                  To identify individual intelligent types and learning styles.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="programs" class="relative overflow-hidden">
+        <img
+          src="/images/books-green.jpg"
+          alt=""
+          class="absolute inset-0 h-full w-full object-cover"
+          loading="lazy"
+        />
+        <div class="absolute inset-0 bg-navy/55"></div>
+        <div class="relative mx-auto max-w-7xl px-4 py-20 md:px-6">
+          <p class="section-kicker text-cyan">Programs</p>
+          <h2 class="section-title mt-3 text-white">Programs</h2>
+          <p class="mt-4 max-w-3xl text-cream/90">
+            We announce two flagship programs aimed at improvising teachers
+            pedagogy that will enable them to guide students through
+            experiential learning
+          </p>
+          <div class="mt-12 grid gap-6 md:grid-cols-2">
+            <article class="rounded-3xl bg-cream p-7 shadow-card">
+              <p
+                class="font-display text-xs font-bold uppercase tracking-[0.2em] text-purple"
+              >
+                3–4 Months
+              </p>
+              <h3
+                class="mt-2 font-heading text-3xl font-bold uppercase text-navy"
+              >
+                The Aspiring Teacher (TAT)
+              </h3>
+              <p class="mt-3 leading-relaxed text-navy/80">
+                3-4 Months Training course for graduates to hone their teaching
+                skills and create better job opportunities.
+              </p>
+            </article>
+            <article class="rounded-3xl bg-white p-7 shadow-card">
+              <p
+                class="font-display text-xs font-bold uppercase tracking-[0.2em] text-cyan"
+              >
+                Flexible / Part-time
+              </p>
+              <h3
+                class="mt-2 font-heading text-3xl font-bold uppercase text-navy"
+              >
+                The Elevated Teacher (TET)
+              </h3>
+              <p class="mt-3 leading-relaxed text-navy/80">
+                Course aimed at empowering in science teachers wanting to
+                upgrade their skills
+              </p>
+            </article>
+            <article class="rounded-3xl bg-white p-7 shadow-card">
+              <p
+                class="font-display text-xs font-bold uppercase tracking-[0.2em] text-orange"
+              >
+                One Day
+              </p>
+              <h3
+                class="mt-2 font-heading text-3xl font-bold uppercase text-navy"
+              >
+                Student Science Camps (SSC)
+              </h3>
+              <p class="mt-3 leading-relaxed text-navy/80">
+                One day science camps aimed at developing curiosity for 13-18
+                years students with hands on experience and interaction with
+                reputed scientists and engineers working at the forefronts of
+                science and technology.
+              </p>
+            </article>
+            <article class="rounded-3xl bg-cream p-7 shadow-card">
+              <p
+                class="font-display text-xs font-bold uppercase tracking-[0.2em] text-purple-deep"
+              >
+                Auxiliary programs
+              </p>
+              <h3
+                class="mt-2 font-heading text-3xl font-bold uppercase text-navy"
+              >
+                Short Awareness Programs
+              </h3>
+              <p class="mt-3 leading-relaxed text-navy/80">
+                Other short awareness programs for school management, parents
+                and other stake-holders.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="curriculum" class="bg-cream">
+        <div
+          class="mx-auto grid max-w-7xl items-start gap-10 px-4 py-20 md:grid-cols-2 md:px-6"
+        >
+          <div>
+            <p class="section-kicker">Curriculum</p>
+            <h2 class="section-title mt-3">Course Details</h2>
+            <p class="mt-5 text-lg leading-relaxed text-navy/80">
+              Courses are designed around evidence-based pedagogy that blends
+              scholarship, empathy, and experiential learning.
+            </p>
+            <article class="card mt-8 border-t-4 border-purple-deep">
+              <h3 class="font-heading text-2xl font-bold uppercase">
+                Duration
+              </h3>
+              <p class="mt-2 text-navy/80">TAT: 3–4 months</p>
+              <p class="mt-2 text-navy/80">TET: Flexible / part-time format</p>
+            </article>
+          </div>
+          <article class="rounded-3xl bg-purple p-8 text-white shadow-card">
+            <h3 class="font-heading text-3xl font-bold uppercase">
+              Methodology
+            </h3>
+            <ul class="mt-6 space-y-3 text-cream/95">
+              <li>Active Learning</li>
+              <li>Problem-Based Learning</li>
+              <li>5E Model</li>
+              <li>Guided Discovery Labs</li>
+              <li>Think–Pair–Share</li>
+              <li>Action Research</li>
+              <li>Technology integration (AI, VR, digital tools)</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="faculty" class="bg-white">
+        <div
+          class="mx-auto grid max-w-7xl items-center gap-10 px-4 py-20 md:grid-cols-2 md:px-6"
+        >
+          <div>
+            <p class="section-kicker">Faculty</p>
+            <h2 class="section-title mt-3">Who Will Teach</h2>
+            <p class="mt-5 text-lg leading-relaxed text-navy/80">
+              Our programs are delivered by experienced mentors, advisors, and
+              trainers drawn from science, education, psychology, and technology
+              domains.
+            </p>
+            <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+              <li
+                class="rounded-2xl bg-cream px-5 py-4 font-heading text-lg font-bold uppercase"
+              >
+                Senior educators
+              </li>
+              <li
+                class="rounded-2xl bg-mist px-5 py-4 font-heading text-lg font-bold uppercase"
+              >
+                Scientists and subject experts
+              </li>
+              <li
+                class="rounded-2xl bg-cream px-5 py-4 font-heading text-lg font-bold uppercase"
+              >
+                Experienced teacher trainers
+              </li>
+              <li
+                class="rounded-2xl bg-mist px-5 py-4 font-heading text-lg font-bold uppercase"
+              >
+                Technology and mindset coaches
+              </li>
+            </ul>
+          </div>
+          <figure class="overflow-hidden rounded-3xl shadow-card">
+            <img
+              src="/images/stem-collage.png"
+              alt="Teachers and students in hands-on science and technology sessions"
+              class="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section id="outcomes" class="bg-navy-mid text-white">
+        <div class="mx-auto max-w-7xl px-4 py-20 md:px-6">
+          <p class="section-kicker text-cyan">Outcomes</p>
+          <h2 class="section-title mt-3 text-white">Placement Approach</h2>
+          <p class="mt-5 max-w-3xl text-lg text-cream/90">
+            Identify → Profile → Train → Place / This approach focuses on
+            readiness, confidence, and professional alignment rather than mere
+            placement claims.
+          </p>
+          <div class="mt-12 grid gap-6 md:grid-cols-3">
+            <article class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/15">
+              <h3 class="font-heading text-2xl font-bold uppercase text-cyan">
+                Member Institutions
+              </h3>
+              <p class="mt-3 text-cream/85">
+                Mindwave actively collaborates with “Xperimentor” and
+                educational institutions. It is expanding its network of partner
+                schools and learning organizations.
+              </p>
+            </article>
+            <article class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/15">
+              <h3 class="font-heading text-2xl font-bold uppercase text-orange">
+                Testimonials
+              </h3>
+              <p class="mt-3 text-cream/85">
+                Feedback from teachers and learners reflects improved
+                confidence, classroom engagement, and renewed joy in teaching.
+              </p>
+            </article>
+            <article class="overflow-hidden rounded-3xl">
+              <img
+                src="/images/mentors-community.jpg"
+                alt="Community of learners"
+                class="h-full min-h-[14rem] w-full object-cover"
+                loading="lazy"
+              />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="apply" class="bg-purple text-white">
+        <div
+          class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 px-4 py-20 md:flex-row md:items-center md:px-6"
+        >
+          <div class="max-w-2xl">
+            <p class="section-kicker text-cyan">Apply Now</p>
+            <h2 class="section-title mt-3 text-white">Application Form</h2>
+            <p class="mt-5 text-lg text-cream/90">
+              Interested candidates can apply through our application form to
+              enroll in programs or request guidance.
+            </p>
+          </div>
+          <a
+            class="btn-accent"
+            href="https://forms.gle/UM9dDP7R35U9JktQ8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open Application Form
+            <i data-lucide="external-link" class="h-4 w-4"></i>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-cream">
+        <div class="mx-auto max-w-7xl px-4 py-20 md:px-6">
+          <p class="section-kicker">Reaching us at</p>
+          <h2 class="section-title mt-3">Contact Us</h2>
+
+          <div class="mt-10">
+            <h3
+              class="font-heading text-3xl font-bold uppercase text-purple-deep"
+            >
+              JOIN US AS
+            </h3>
+            <div
+              class="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6"
+            >
+              <span
+                class="rounded-full bg-orange px-4 py-3 text-center font-display text-sm font-extrabold uppercase tracking-wide text-navy"
+                >Sponsor</span
+              >
+              <span
+                class="rounded-full bg-purple px-4 py-3 text-center font-display text-sm font-extrabold uppercase tracking-wide text-white"
+                >Partner</span
+              >
+              <span
+                class="rounded-full bg-cyan px-4 py-3 text-center font-display text-sm font-extrabold uppercase tracking-wide text-navy"
+                >Trainer</span
+              >
+              <span
+                class="rounded-full bg-navy px-4 py-3 text-center font-display text-sm font-extrabold uppercase tracking-wide text-white"
+                >Ideamate</span
+              >
+              <span
+                class="rounded-full bg-terracotta px-4 py-3 text-center font-display text-sm font-extrabold uppercase tracking-wide text-white"
+                >Donor</span
+              >
+              <span
+                class="rounded-full bg-purple-deep px-4 py-3 text-center font-display text-sm font-extrabold uppercase tracking-wide text-white"
+                >Teacher</span
+              >
+            </div>
+          </div>
+
+          <div class="mt-12 grid gap-8 lg:grid-cols-2">
+            <div class="grid gap-4">
+              <article class="card">
+                <h3
+                  class="flex items-center gap-2 font-heading text-xl font-bold uppercase"
+                >
+                  <i data-lucide="map-pin" class="h-5 w-5 text-orange"></i>
+                  Mailing Address
+                </h3>
+                <p class="mt-3 leading-relaxed text-navy/80">
+                  Mindwave Edu Hub,<br />
+                  1st Main, Kamalapur Layout,<br />
+                  (Behind Bhruvam Garden Restaurant),<br />
+                  Sadhanakeri, DHARWAD – 580 008
+                </p>
+              </article>
+              <article class="card">
+                <h3
+                  class="flex items-center gap-2 font-heading text-xl font-bold uppercase"
+                >
+                  <i data-lucide="mail" class="h-5 w-5 text-purple"></i>
+                  Email Address
+                </h3>
+                <a
+                  class="mt-3 inline-block text-navy/80 underline decoration-cyan underline-offset-4"
+                  href="mailto:mindwaveeduhub@gmail.com"
+                  >mindwaveeduhub@gmail.com</a
+                >
+              </article>
+              <article class="card">
+                <h3
+                  class="flex items-center gap-2 font-heading text-xl font-bold uppercase"
+                >
+                  <i data-lucide="phone" class="h-5 w-5 text-cyan"></i>
+                  Phone Number
+                </h3>
+                <a
+                  class="mt-3 inline-block text-navy/80 underline decoration-cyan underline-offset-4"
+                  href="tel:+917204004388"
+                  >+91 72040 04388</a
+                >
+              </article>
+            </div>
+            <figure class="overflow-hidden rounded-3xl shadow-card">
+              <img
+                src="/images/hero-campus.jpg"
+                alt="Mindwave Edu Hub campus"
+                class="h-full min-h-[22rem] w-full object-cover"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-navy text-cream">
+      <div
+        class="mx-auto grid max-w-7xl gap-8 px-4 py-12 md:grid-cols-3 md:px-6"
+      >
+        <div>
           <p
-            class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed"
+            class="font-display text-xl font-extrabold uppercase tracking-[0.14em]"
           >
-            We're passionate about democratizing education and making
-            high-quality learning accessible to everyone, everywhere.
+            Mindwave Edu Hub
+          </p>
+          <p class="mt-3 max-w-sm text-cream/75">
+            Where Empathy meets Scholarship
           </p>
         </div>
-
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div class="space-y-6">
-            <div class="glass-effect p-6 rounded-2xl">
-              <div class="flex items-center mb-4">
-                <div
-                  class="w-12 h-12 bg-gradient-to-r from-brand to-accent rounded-xl flex items-center justify-center mr-4"
-                >
-                  <i
-                    data-lucide="graduation-cap"
-                    class="text-white h-6 w-6"
-                  ></i>
-                </div>
-                <h4 class="text-xl font-bold">Expert Instructors</h4>
-              </div>
-              <p class="text-gray-600 dark:text-gray-400">
-                Learn from industry professionals with years of real-world
-                experience and proven track records.
-              </p>
-            </div>
-
-            <div class="glass-effect p-6 rounded-2xl">
-              <div class="flex items-center mb-4">
-                <div
-                  class="w-12 h-12 bg-gradient-to-r from-accent to-brand rounded-xl flex items-center justify-center mr-4"
-                >
-                  <i data-lucide="terminal" class="text-white h-6 w-6"></i>
-                </div>
-                <h4 class="text-xl font-bold">Hands-on Learning</h4>
-              </div>
-              <p class="text-gray-600 dark:text-gray-400">
-                Get practical experience with real projects, case studies, and
-                interactive exercises.
-              </p>
-            </div>
-
-            <div class="glass-effect p-6 rounded-2xl">
-              <div class="flex items-center mb-4">
-                <div
-                  class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mr-4"
-                >
-                  <i data-lucide="users" class="h-5 w-5 fill-white"></i>
-                </div>
-                <h4 class="text-xl font-bold">Community Support</h4>
-              </div>
-              <p class="text-gray-600 dark:text-gray-400">
-                Join a vibrant community of learners, share knowledge, and grow
-                together.
-              </p>
-            </div>
-          </div>
-
-          <div class="relative">
-            <div class="glass-effect p-8 rounded-3xl text-center">
-              <div class="text-6xl mb-4">🎓</div>
-              <h4 class="text-2xl font-bold mb-4">Our Mission</h4>
-              <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                To empower learners worldwide with accessible, high-quality
-                education that prepares them for the future. We believe everyone
-                deserves the opportunity to learn, grow, and achieve their
-                dreams.
-              </p>
-            </div>
-            <div
-              class="absolute -top-4 -right-4 w-24 h-24 bg-accent/20 rounded-full blur-xl"
-            ></div>
-            <div
-              class="absolute -bottom-4 -left-4 w-32 h-32 bg-brand/20 rounded-full blur-xl"
-            ></div>
-          </div>
+        <nav class="grid grid-cols-2 gap-2 text-sm" aria-label="Footer">
+          <a class="hover:text-cyan" href="#about">About</a>
+          <a class="hover:text-cyan" href="#programs">Programs</a>
+          <a class="hover:text-cyan" href="#mentors">Mentors</a>
+          <a class="hover:text-cyan" href="#facilities">Facilities</a>
+          <a class="hover:text-cyan" href="#curriculum">Curriculum</a>
+          <a class="hover:text-cyan" href="#contact">Contact</a>
+        </nav>
+        <div class="text-sm text-cream/80">
+          <p>mindwaveeduhub@gmail.com</p>
+          <p class="mt-1">+91 72040 04388</p>
+          <p class="mt-1">Sadhanakeri, Dharwad – 580 008</p>
         </div>
       </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="py-20 px-6 max-w-6xl mx-auto">
-      <div class="text-center mb-16">
-        <h3 class="text-4xl md:text-5xl font-bold mb-6">
-          <span class="gradient-text">Get In Touch</span>
-        </h3>
-        <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-          Have questions? We'd love to hear from you. Send us a message and
-          we'll respond as soon as possible.
-        </p>
-      </div>
-
-      <div class="grid lg:grid-cols-2 gap-12">
-        <!-- Contact Info -->
-        <div class="space-y-8">
-          <div class="glass-effect p-8 rounded-3xl">
-            <h4 class="text-2xl font-bold mb-6 text-center">
-              Contact Information
-            </h4>
-            <div class="space-y-6">
-              <div class="flex items-center space-x-4">
-                <div
-                  class="w-12 h-12 bg-gradient-to-r from-brand to-accent rounded-xl flex items-center justify-center"
-                >
-                  <i data-lucide="phone" class="h-4 w-4 fill-white"></i>
-                </div>
-                <div>
-                  <div class="font-semibold">Phone</div>
-                  <div class="text-gray-600 dark:text-gray-400">
-                    +91 9876543210
-                  </div>
-                </div>
-              </div>
-
-              <div class="flex items-center space-x-4">
-                <div
-                  class="w-12 h-12 bg-gradient-to-r from-accent to-brand rounded-xl flex items-center justify-center"
-                >
-                  <i data-lucide="mail" class="h-5 w-5"></i>
-                </div>
-                <div>
-                  <div class="font-semibold">Email</div>
-                  <div class="text-gray-600 dark:text-gray-400">
-                    info@mindwaveeduhub.com
-                  </div>
-                </div>
-              </div>
-
-              <div class="flex items-center space-x-4">
-                <div
-                  class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center"
-                >
-                  <i data-lucide="map-pin" class="h-5 w-5"></i>
-                </div>
-                <div>
-                  <div class="font-semibold">Address</div>
-                  <div class="text-gray-600 dark:text-gray-400">
-                    123 Learning Street, EduCity
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="glass-effect p-8 rounded-3xl">
-            <h4 class="text-xl font-bold mb-4">Follow Us</h4>
-            <div class="flex space-x-4">
-              <a
-                href="#"
-                class="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center hover:scale-110 transition-transform"
-                aria-label="Facebook"
-              >
-                <i
-                  data-lucide="facebook"
-                  class="fill-white h-[1.25rem] w-[1.25rem]"
-                ></i>
-              </a>
-              <a
-                href="#"
-                class="w-10 h-10 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl flex items-center justify-center hover:scale-110 transition-transform"
-                aria-label="Twitter"
-              >
-                <i
-                  data-lucide="twitter"
-                  class="fill-white h-[1.25rem] w-[1.25rem]"
-                ></i>
-              </a>
-              <a
-                href="#"
-                class="w-10 h-10 bg-gradient-to-r from-pink-500 to-pink-600 rounded-xl flex items-center justify-center hover:scale-110 transition-transform"
-                aria-label="Instagram"
-              >
-                <i data-lucide="instagram" class="h-[1.25rem] w-[1.25rem]"></i>
-              </a>
-              <a
-                href="#"
-                class="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl flex items-center justify-center hover:scale-110 transition-transform"
-                aria-label="LinkedIn"
-              >
-                <i
-                  data-lucide="linkedin"
-                  class="fill-white h-[1.25rem] w-[1.25rem]"
-                ></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Contact Form -->
-        <form class="glass-effect p-8 rounded-3xl space-y-6">
-          <div class="grid md:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-sm font-medium mb-2">First Name</label>
-              <input
-                type="text"
-                placeholder="Enter your first name"
-                required
-                class="w-full p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-brand focus:border-transparent transition-all duration-200"
-              />
-            </div>
-            <div>
-              <label class="block text-sm font-medium mb-2">Last Name</label>
-              <input
-                type="text"
-                placeholder="Enter your last name"
-                required
-                class="w-full p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-brand focus:border-transparent transition-all duration-200"
-              />
-            </div>
-          </div>
-
-          <div>
-            <label class="block text-sm font-medium mb-2">Email Address</label>
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              required
-              class="w-full p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-brand focus:border-transparent transition-all duration-200"
-            />
-          </div>
-
-          <div>
-            <label class="block text-sm font-medium mb-2">Subject</label>
-            <input
-              type="text"
-              placeholder="What's this about?"
-              required
-              class="w-full p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-brand focus:border-transparent transition-all duration-200"
-            />
-          </div>
-
-          <div>
-            <label class="block text-sm font-medium mb-2">Message</label>
-            <textarea
-              placeholder="Tell us how we can help you..."
-              required
-              rows="5"
-              class="w-full p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-brand focus:border-transparent transition-all duration-200 resize-none"
-            ></textarea>
-          </div>
-
-          <button
-            type="submit"
-            class="w-full py-4 bg-gradient-to-r from-brand to-brand-dark text-white rounded-xl hover:shadow-xl transform hover:scale-105 transition-all duration-200 font-semibold text-lg"
-          >
-            <span class="flex items-center justify-center space-x-2">
-              <span>Send Message</span>
-              <i data-lucide="send" class="fill-white h-5 w-5"></i>
-            </span>
-          </button>
-        </form>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer
-      class="bg-gradient-to-r from-gray-900 to-gray-800 dark:from-gray-950 dark:to-gray-900 text-white py-12"
-    >
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="grid md:grid-cols-4 gap-8 mb-8">
-          <div class="space-y-4">
-            <div class="flex items-center space-x-2">
-              <div
-                class="w-10 h-10 bg-gradient-to-r from-brand to-accent rounded-xl flex items-center justify-center"
-              >
-                <i data-lucide="graduation-cap" class="h-6 w-6"></i>
-              </div>
-              <h3 class="text-xl font-bold">Mind-Wave EduHub</h3>
-            </div>
-            <p class="text-gray-400 leading-relaxed">
-              Empowering learners worldwide with accessible, high-quality
-              education for the future.
-            </p>
-            <div class="flex space-x-4">
-              <a
-                href="#"
-                class="w-8 h-8 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-brand transition-colors"
-                aria-label="Facebook"
-              >
-                <i data-lucide="facebook" class="fill-white h-4 w-4"></i>
-              </a>
-              <a
-                href="#"
-                class="w-8 h-8 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-brand transition-colors"
-                aria-label="Twitter"
-              >
-                <i data-lucide="twitter" class="fill-white h-4 w-4"></i>
-              </a>
-              <a
-                href="#"
-                class="w-8 h-8 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-brand transition-colors"
-                aria-label="Instagram"
-              >
-                <i data-lucide="instagram" class="h-4 w-4"></i>
-              </a>
-              <a
-                href="#"
-                class="w-8 h-8 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-brand transition-colors"
-                aria-label="LinkedIn"
-              >
-                <i data-lucide="linkedin" class="fill-white h-4 w-4"></i>
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul class="space-y-2">
-              <li>
-                <a
-                  href="#hero"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#courses"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Courses</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 class="text-lg font-semibold mb-4">Courses</h4>
-            <ul class="space-y-2">
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Web Development</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Data Science</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Mobile Development</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >All Courses</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 class="text-lg font-semibold mb-4">Support</h4>
-            <ul class="space-y-2">
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Help Center</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Privacy Policy</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Terms of Service</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >Refund Policy</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="border-t border-gray-700 pt-8 text-center">
-          <p class="text-gray-400">
-            &copy; 2025 Mind-Wave EduHub. All rights reserved.
-          </p>
-        </div>
+      <div
+        class="border-t border-white/10 py-4 text-center text-xs text-cream/60"
+      >
+        © 2026 Mindwave Edu Hub. All rights reserved.
       </div>
     </footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
