@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mindwave Edu Hub">
+  <path d="M6 40c11-7 18-18 26-22 8-4 16-3.2 25 2.4" fill="none" stroke="#0b1c2d" stroke-width="5.8" stroke-linecap="round"/>
+  <path d="M8 47c11-7 18-17 25-20.6 8-3.6 16-2.8 24 2.2" fill="none" stroke="#e2725b" stroke-width="3.3" stroke-linecap="round"/>
+  <path d="M10 54c10-6 17-14 24-17.2 7-3.2 14.5-2.4 22 1.8" fill="none" stroke="#0b1c2d" stroke-width="3.3" stroke-linecap="round"/>
+  <circle cx="48" cy="12.5" r="2.5" fill="#0b1c2d"/>
+  <circle cx="54" cy="16.8" r="1.8" fill="#0b1c2d"/>
+  <circle cx="43.2" cy="10.2" r="1.6" fill="#0b1c2d"/>
+  <circle cx="57.2" cy="11.4" r="1.15" fill="#0b1c2d"/>
+</svg>
